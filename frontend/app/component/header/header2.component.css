@@ -1,0 +1,35 @@
+    .navbar-second {
+        width: 100%;
+        left: 2px;
+        top: 65px;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.98);
+        -webkit-transition: all 0.5s;
+        transition: all 0s;
+    }
+
+    .navbar-shrink-second {
+       visibility: collapse;
+    }
+
+    .seperator{
+        width: 100%;
+        background: white;
+        height:3px;
+    }
+
+    .menus{
+        padding:5px;
+        float: left;
+        margin-left:55px;
+        color: whitesmoke;
+        cursor: pointer;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none;
+    }
+    
+    .menus:hover{
+        background: #6083ff;
+    }
+

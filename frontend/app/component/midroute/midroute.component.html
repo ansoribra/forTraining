@@ -1,0 +1,8 @@
+<header (showMenu)="popup.searchmenu()"
+        (hideMenu)="popup.searchmenuhide()"
+        (searchemit)="searchCalled($event)"
+        (showLogin)="login.buka()">
+</header>
+<home (click)="popup.visibility='hidden'" ></home>
+<app-searchpopup #popup  [term]='searchValue'></app-searchpopup>
+<app-login #login></app-login>

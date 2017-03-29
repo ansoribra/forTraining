@@ -1,0 +1,55 @@
+<header (showMenu)="popup.searchmenu()"
+        (hideMenu)="popup.searchmenuhide()"
+        (searchemit)="searchCalled($event)"
+        (showLogin)="login.buka()">
+</header>
+<app-searchpopup #popup  [term]='searchValue'></app-searchpopup>
+<app-login #login></app-login>
+<br><br><br><br><br>
+
+<div (click)="popup.visibility='hidden'" style="width: 100%; ">
+  <div class="centerer">
+    <div class="leftbar">
+    <div class="mainphoto">
+      <img width="250px" height="250px" src="{{server}}/public/{{ store_id }}/{{ id }}/{{image_number}}.jpg"/>
+    </div>
+    <div width="250px" *ngFor="let object of createRange()">
+      <img class="childphoto" (click)= "changeimage(object)" style="float: left; margin: 5px;" width="50px" height="50px" src="{{server}}/public/{{ store_id }}/{{ id }}/{{object }}.jpg"/>
+    </div>
+    </div>
+    <div class="maindetail">
+      <div class="productname"> &nbsp; {{product_name}}</div>
+      <div class="sosandbuy">
+        <div class="sosmed">
+          <div class="sebarkan">Sebarkan :</div>
+          <img src="imagemanagement/line.png" alt="line">
+          <img src="imagemanagement/fb.png" alt="line">
+          <img src="imagemanagement/wa.png" alt="line">
+          <img src="imagemanagement/twiter.png" alt="line">
+          <img src="imagemanagement/blogspot.png" alt="line">
+          <img src="imagemanagement/gplus.png" alt="line">
+        </div>
+      </div>
+      <div class="productdescription">{{product_description}}</div>
+      <div class="productprice">
+        <div class="header">Harga</div>
+        <div class="body">
+          <div style="color: #c8030c; font-weight: bold; font-size: 25px;">Rp : {{product_discount_after| currency:'IDR'|slice:3}}</div>
+          <br>
+          <div>Discount: {{product_discount}}% of</div><div style="text-decoration: line-through; font-style: italic;"> {{product_price| currency:'IDR'|slice:3}}</div>
+          <br>
+          <div STYLE="background: rgba(255, 0, 0, 0.46); padding: 10px;">BELI</div>
+        </div>
+      </div>
+
+      <div class="productsold">
+        <div class="header">Terjual</div>
+        <div class="body">
+          <div style="color: #c8030c; font-weight: bold; font-size: 25px;"> {{product_sold| currency:'IDR'|slice:3}} Items</div>
+          <br>
+          <div><img src="{{starspath}}"  alt="{{product_rating}}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

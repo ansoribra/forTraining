@@ -1,0 +1,36 @@
+<header (showMenu)="popup.searchmenu()"
+        (hideMenu)="popup.searchmenuhide()"
+        (searchemit)="searchCalled($event)"
+        (showLogin)="login.buka()">
+</header>
+<app-searchpopup #popup [term]='searchValue' id="popmen"></app-searchpopup>
+<app-login #login></app-login>
+
+<div (click)="popup.visibility='hidden'" style="width: 100%;  overflow: auto;">
+<div  class="centerer">
+<div class="content">
+    <div>
+        <div class="prodhead">Hasil pencarian dari keyword {{name}}</div>
+        <a [routerLink]="['/home']"><div class="seemore">Back to Home</div></a></div><br><br>
+    <div class="line-separator"></div>
+    <div class="borderproduct" *ngFor="let search of searches">
+      <div [routerLink]="['/detailprod',search.id]">
+        <img width="150px" height="150px" src="{{server}}/public/{{search.product_store_id}}/{{ search.id }}/1.jpg"/><br>
+        <div class="butproduct">
+          <div class="prodname">{{ search.product_name }}</div>
+          <div class="prodprice">RP: {{ search.product_price | currency:'IDR'|slice:3}}</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div (click)="prev()" class="prevpage" [ngStyle]="{'background':prevactive, 'pointer-events': prevpointeractive}">PREVIOUS{{totalpages}}</div>
+    <div *ngFor="let object of createRange(totalpages,indexpagination)">
+        <div class="refferednumber" id="refferednumber{{object}}">
+            <div (click)="handleClick(object);moveto(object)">{{normalizepage(object)}}</div>
+        </div>
+    </div>
+    <div (click)="next()" class="nextpage" [ngStyle]="{'background':nextactive, 'pointer-events': nextpointeractive}">NEXT</div>
+</div>
+</div>
+</div>

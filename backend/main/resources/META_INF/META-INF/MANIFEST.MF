@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Class-Path: jackson-core-2.8.1.jar logback-core-1.1.7.jar spring-boot-
+ configuration-processor-1.4.0.RELEASE.jar tomcat-jdbc-8.5.4.jar autom
+ aton-1.11-8.jar hibernate-commons-annotations-5.0.1.Final.jar hiberna
+ te-core-5.0.9.Final.jar jul-to-slf4j-1.7.21.jar spring-boot-starter-t
+ omcat-1.4.0.RELEASE.jar spring-aspects-4.3.2.RELEASE.jar spring-boot-
+ 1.4.0.RELEASE.jar snakeyaml-1.17.jar classmate-1.3.1.jar spring-data-
+ jpa-1.10.2.RELEASE.jar mariadb-java-client-1.5.7.jar spring-jdbc-4.3.
+ 2.RELEASE.jar jboss-logging-3.3.0.Final.jar javax.el-api-3.0.0.jar jj
+ wt-0.6.0.jar validation-api-1.1.0.Final.jar dom4j-1.6.1.jar hibernate
+ -validator-5.2.4.Final.jar tomcat-juli-8.5.4.jar javafaker-0.10.jar x
+ ml-apis-1.4.01.jar spring-core-4.3.2.RELEASE.jar jcl-over-slf4j-1.7.2
+ 1.jar json-20140107.jar spring-web-4.3.2.RELEASE.jar javassist-3.20.0
+ -GA.jar hibernate-jpa-2.1-api-1.0.0.Final.jar spring-boot-autoconfigu
+ re-1.4.0.RELEASE.jar spring-beans-4.3.2.RELEASE.jar spring-webmvc-4.3
+ .2.RELEASE.jar spring-expression-4.3.2.RELEASE.jar commons-lang3-3.3.
+ 2.jar aspectjweaver-1.8.9.jar tomcat-embed-el-8.5.4.jar spring-boot-s
+ tarter-logging-1.4.0.RELEASE.jar jackson-databind-2.8.1.jar javax.tra
+ nsaction-api-1.2.jar spring-boot-starter-aop-1.4.0.RELEASE.jar common
+ s-lang-2.6.jar spring-data-commons-1.12.2.RELEASE.jar logback-classic
+ -1.1.7.jar spring-boot-starter-data-jpa-1.4.0.RELEASE.jar spring-cont
+ ext-4.3.2.RELEASE.jar spring-tx-4.3.2.RELEASE.jar hibernate-entityman
+ ager-5.0.9.Final.jar spring-orm-4.3.2.RELEASE.jar spring-boot-starter
+ -1.4.0.RELEASE.jar jackson-annotations-2.8.1.jar antlr-2.7.7.jar jand
+ ex-2.0.0.Final.jar generex-1.0.1.jar spring-boot-starter-web-1.4.0.RE
+ LEASE.jar joda-time-2.9.4.jar log4j-over-slf4j-1.7.21.jar tomcat-embe
+ d-websocket-8.5.4.jar spring-boot-starter-jdbc-1.4.0.RELEASE.jar slf4
+ j-api-1.7.21.jar tomcat-embed-core-8.5.4.jar spring-aop-4.3.2.RELEASE
+ .jar
+Main-Class: 
+

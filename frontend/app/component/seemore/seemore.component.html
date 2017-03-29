@@ -1,0 +1,34 @@
+<header (showMenu)="popup.searchmenu()"
+        (hideMenu)="popup.searchmenuhide()"
+        (searchemit)="searchCalled($event)"
+        (showLogin)="login.buka()">
+</header>
+<app-searchpopup #popup [term]='searchValue'></app-searchpopup>
+<app-login #login></app-login>
+
+<div (click)="popup.visibility='hidden'" class="centerer">
+  <div  class="content">
+    <div>
+      <div class="prodhead">{{idCat}}</div>
+      <a [routerLink]="['/home']"><div class="seemore">Back to Home</div></a></div><br><br>
+    <div class="line-separator"></div>
+    <div class="borderproduct" *ngFor="let category of categories">
+      <div [routerLink]="['/detailprod',category.id]">
+      <img width="150px" height="150px" src="{{server}}/public/{{category.product_store_id}}/{{ category.id }}/1.jpg"/><br>
+      <div class="butproduct">
+        <div class="prodname">{{ category.product_name }}</div>
+        <div class="prodprice">RP: {{ category.product_price | currency:'IDR'|slice:3}}</div>
+      </div>
+      </div>
+    </div>
+
+    <br>
+    <div (click)="prev()" class="prevpage" [ngStyle]="{'background':prevactive, 'pointer-events': prevpointeractive}">PREVIOUS{{totalpages}}</div>
+    <div *ngFor="let object of createRange(totalpages,indexpagination)">
+      <div class="refferednumber" id="refferednumber{{object}}">
+        <div (click)="handleClick(object);moveto(object)">{{normalizepage(object)}}</div>
+      </div>
+    </div>
+    <div (click)="next()" class="nextpage" [ngStyle]="{'background':nextactive, 'pointer-events': nextpointeractive}">NEXT</div>
+  </div>
+</div>

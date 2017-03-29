@@ -1,0 +1,163 @@
+    .mainhead{
+        top:0px;
+        position: fixed;
+        width: 100%;
+    }
+    
+    .centerer {
+        margin:auto;
+        width:1400px;
+        overflow: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        left: 2px;
+        top: -2px;
+        background: rgba(0, 0, 0, 0.98);
+        padding: 8px 15px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar-shrink {
+        background: rgba(0, 0, 0, 0.79);
+        opacity: 7.9;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .ico-qyubix{
+        margin-left:50px;
+        margin-top:10px;
+        height:40px;
+        width:100px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        float: left;
+    }
+
+    .ico-qyubix-shrink{
+        margin-top: 10px;
+        height:27px;
+        width:70px;
+    }
+
+    .search-field {
+        margin-top:10px;
+        margin-left: 100px;
+        border-bottom-color: red;
+        border-right-color: red;
+        border-top-color: black;
+        border-left-color: black;
+        border-bottom-width: 5px;
+        outline:none;
+        height:35px;
+        width:600px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        float: left;
+    }
+
+    .search-field-shrink {
+        margin-left:30px;
+        margin-top: 10px;
+        height:20px;
+        width:350px;
+        border-bottom-width: 2px;
+    }
+
+    .search-button {
+        margin-top:11px;
+        background: red;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 43px;
+        width:80px;
+        height:43px;
+        cursor: pointer;
+        color: #fff;
+        float: left;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none;
+    }
+
+    .search-button-shrink {
+        margin-right:100px;
+        margin-top: 12px;
+        line-height: 25px;
+        height: 23px;
+    }
+
+    .search-wrapper:hover  > .search-field {
+        border-bottom-color: #6083ff;
+        border-right-color: #6083ff;
+        border-top-color: #6083ff;
+        border-left-color: #6083ff;
+    }
+
+    .search-wrapper:hover > .search-button{
+        background: #6083ff;
+    }
+
+    .button-bs{
+        margin-top:11px;
+        margin-left: 10px;
+        float: left;
+        border: 0;
+        background: #ff030c;
+        color: #fff;
+        cursor: pointer;
+        outline: 0;
+        padding: 13px 20px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.1s;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none;
+    }
+
+    .button-bs-shrink{
+        visibility: hidden;
+        width: 0px;
+        height:0px;
+        margin-left: 0px;
+    }
+
+    .button-bs:hover{
+        background: #6083ff;
+    }
+    
+    .button-as{
+        visibility: hidden;
+        height:0px;
+        width:0px;
+        margin-right: 0px;
+    }
+
+    .button-as-shrink{
+        margin-right: 20px;
+        margin-top:10px;
+        visibility: visible;
+        background: transparent;
+        color: #fff;
+        float: left;
+        cursor: pointer;
+        height:auto;
+        width:auto;
+        -webkit-transition: all 0.5s;
+        transition: all 2.1s;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none;
+    }
+    
+    .button-as:hover{
+        color: blue;
+    }
+

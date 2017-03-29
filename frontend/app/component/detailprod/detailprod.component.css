@@ -1,0 +1,97 @@
+
+.centerer {
+    margin:auto;
+    width:1300px;
+    text-align: center;
+    margin-left:40px;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.leftbar{
+    float: left;
+    border-color: black;
+    border-width:1px;
+    border-style: solid;
+    margin-top:10px;
+}
+.mainphoto{
+    height: 300px;
+    width:300px;
+    margin-top:20px
+}
+
+.childphoto:hover{
+    cursor: pointer;
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+
+.maindetail{
+    padding:10px;
+    text-align: left;
+    width:900px;
+    margin-left:330px;
+    overflow: auto;
+}
+
+
+.productname{
+    font-size: 30px;
+    background: black;
+    color: white;
+    padding-top:5px;
+    padding-bottom:10px;
+    width:100%;
+}
+
+.productdescription{
+    line-height: 150%;
+    padding: 10px;
+    width:600px;
+    float: left;
+}
+
+.productprice, .productsold {
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-color: black;
+    border-width:1px;
+    border-style: solid;
+    width:240px;
+    margin-left:650px;
+    margin-top:40px;
+}
+
+.productprice .header, .productsold .header{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: black;
+}
+
+.productprice .body, .productsold .body{
+    padding:10px;
+}
+
+.sosandbuy{
+    border-color: black;
+    border-width:1px;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.sosmed img{
+    margin:10px;
+    cursor: pointer;
+}
+
+.sebarkan{
+    margin-top:15px;
+    margin-left:15px;
+    float: left;
+}

@@ -1,0 +1,14 @@
+<div class="container" [ngStyle]="{'visibility':visibility}">
+  <img (click)="tutup()"
+       width="20px" height="20px" src="imagemanagement/close.png" alt="Close" style="margin: 10px" >
+  <div class="content">
+    <input type="text" placeholder=" Username..." [(ngModel)]="username"/><br><br>
+    <input type="text" placeholder=" Password..." [(ngModel)]="password"/><br><br>
+    <div class="butloggin" (click)="login(username,password)">MASUK</div>
+    <div class="butfblog">Login with Facebook<br>
+      <img width="20px" height="20px" src="imagemanagement/fb.png" alt="Close" style="margin: 10px">
+    </div>
+    <br>
+    <a href="">Belum punya account?</a>
+  </div>
+</div>

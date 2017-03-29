@@ -1,0 +1,8 @@
+<br>
+<div (click)="prev()" class="prevpage" [ngStyle]="{'background':prevactive, 'pointer-events': prevpointeractive}">PREVIOUS{{totalpages}}</div>
+<div *ngFor="let object of createRange(totalpages)">
+  <div class="refferednumber" id="refferednumber{{object}}">
+    <div (click)="handleClick(object);moveto(object)" [ngStyle]="{'background':movetoactive}" class="loopofmoveto">{{object}}</div>
+  </div>
+</div>
+<div (click)="next()" class="nextpage" [ngStyle]="{'background':nextactive, 'pointer-events': nextpointeractive}">NEXT</div>

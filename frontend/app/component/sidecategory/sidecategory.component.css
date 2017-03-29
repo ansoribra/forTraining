@@ -1,0 +1,54 @@
+.categorysidebarfix{
+    top:130px;
+    position: fixed;
+    width:200px;
+    height: 900px;
+    float: left;
+    margin-right:10px;
+    margin-left:10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.catgorsidfixShrink{
+    top:100px;
+}
+
+.line-separator{
+    height:1px;
+    background:#717171;
+    border-bottom:1px solid #313030;
+}
+
+.cat{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.cat:hover{
+    background: #6083ff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}

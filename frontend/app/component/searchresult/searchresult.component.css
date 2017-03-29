@@ -1,0 +1,144 @@
+.centerer {
+    margin:auto;
+    width:1300px;
+    text-align: center;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.line-separator{
+    height:1px;
+    background:#717171;
+    border-bottom:1px solid #313030;
+}
+
+.content{
+    margin-top:80px;
+    margin-left:220px;
+    padding:10px;
+    float: left;
+    width:1000px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.prodhead{
+    float: left;
+}
+
+.seemore{
+    float: right;
+    background: rgba(255, 0, 0, 0.46);
+    color: white;
+    padding:5px;
+    cursor: pointer;
+}
+
+.seemore:hover{
+    background: #6083ff;
+}
+
+.category{
+    text-align: left;
+}
+
+.borderproduct{
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    margin-top:15px;
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.borderproduct:hover{
+    border-color: #6083ff;
+    background:#6083ff ;
+
+}
+
+.borderproduct:hover > .butproduct{
+    background: #6083ff ;
+}
+
+
+.borderproduct img{
+    margin:auto;
+}
+
+.prodname{
+    margin-top:10px;
+    margin-left:10px;
+    height:30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:12px;
+}
+
+.prodprice{
+    margin-left:10px;
+    margin-bottom:20px;
+    font-family: 'Source Code Pro', Consolas, monospace;
+    font-size:14px;
+}
+
+.butproduct{
+    text-align: left;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor{
+    float: left;
+    height: 50px;
+    width:1000px;
+    visibility: hidden;
+}
+
+
+.nextpage, .prevpage{
+    background: rgba(255, 0, 0, 0.46);
+    float: left;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+    margin-right:3px;
+}
+
+.refferednumber{
+    background: rgba(255, 0, 0, 0.46);
+    float: left;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+    margin-right:3px;
+}
+
+#refferednumber0{
+    background: red;
+    float: left;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+    margin-right:3px;
+}
